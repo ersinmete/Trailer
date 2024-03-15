@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+* {
+  margin: 0;
+}
+body {
+  height: 100vh;
+  font-family: "Electrolize", sans-serif;
+}
+.navbar {
+  background-color: #000;
+  height: 60px;
+  color: white;
+  position: sticky; /* ekrana sabiltedik aşaı inerken top dahil */
+  top: 0;
+}
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; /* logoyuda kapsaması için */
+  padding: 0 50px;
+}
+.logo {
+  color: rgb(255, 70, 70);
+}
+.menu-list {
+  display: flex;
+  list-style: none; /*başlarındaki noktalı yok et*/
+  column-gap: 30px; /* aralarını 30 px boşluk bıraktı kelimelerin */
+}
+.menu-item {
+  cursor: pointer;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.menu-item:hover {
+  font-weight: bold;
+}
+.menu-item.active {
+  font-weight: bold; /* açıkken belirgin */
+}
+.porfile-picture {
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-text-container{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 1;
+}
+.toggle {
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.toggle-icon {
+  color: goldenrod;
+}
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    right: 1px;
+
+    cursor: pointer;
+}
+.sidebar {
+  background-color: #000;
+  color: white;
+  height: 100%;
+  width: 40px;
+}
