@@ -36,7 +36,7 @@ body {
 .menu-item {
   cursor: pointer;
 }
-.profile-container {.active
+.profile-container {
   display: flex;
   align-items: center;
   column-gap: 20px;
@@ -246,10 +246,10 @@ body {
 .sidebar i.active {
   color: black;
 }
-.movie-list-title.active{
+.movie-list-title.active {
   color: black;
 }
-.toggle.active{
+.toggle.active {
   background-color: black;
 }
 .toggle-ball.active {
