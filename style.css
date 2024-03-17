@@ -36,7 +36,7 @@ body {
 .menu-item {
   cursor: pointer;
 }
-.profile-container {
+.profile-container {.active
   display: flex;
   align-items: center;
   column-gap: 20px;
