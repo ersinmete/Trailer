@@ -36,7 +36,7 @@ body {
 .menu-item {
   cursor: pointer;
 }
-.profile-container {.active
+.profile-container {
   display: flex;
   align-items: center;
   column-gap: 20px;
@@ -122,7 +122,8 @@ body {
 }
 .featured-btns {
   display: flex;
-  column-gap: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 .featured-btns button {
   padding: 10px 25px;
@@ -262,4 +263,25 @@ body {
 }
 .arrow.active {
   color: black;
+}
+/* ! Responsive */
+
+@media only screen and (max-width: 800px) {
+  .menu-container {
+    display: none;
+  }
+  .featured-content {
+    height: 50vh;
+  }
+  .feautured-title {
+    width: 200px;
+  }
+  .featured-desc {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    max-width: 200px;
+    padding: 0;
+  }
 }
