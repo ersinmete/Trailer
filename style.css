@@ -5,6 +5,16 @@
 body {
   font-family: "Electrolize", sans-serif;
 }
+::selection {
+  background-color: white;
+}
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: black;
+}
 .container {
   background-color: black;
   color: white;
@@ -83,7 +93,7 @@ body {
   transition: 0.5s ease-in all;
 }
 /* !Sidebar */
-.sidebar {
+/* .sidebar {
   background-color: #000;
   color: white;
   height: 100%;
@@ -100,7 +110,8 @@ body {
   color: white;
   font-size: 20px;
   cursor: pointer;
-}
+
+} */
 .content-wrapper {
   margin-left: 50px;
 }
@@ -185,6 +196,7 @@ body {
   height: 200px;
   object-fit: cover;
   transition: 1s all ease-in-out;
+  border-radius: 25% 10%;
 }
 .movie-item-title {
   background-color: rgb(40, 40, 40, 0.4);
@@ -257,10 +269,7 @@ body {
   background-color: white;
   transform: translateX(-20px);
 }
-.movie-list-filter select.active {
-  background-color: white;
-  color: black;
-}
+
 .arrow.active {
   color: black;
 }
